@@ -1,0 +1,6 @@
+<div>
+  <p>{{name}}</p>
+  <p>{{ hocVien.hoTen }}</p>
+  <input inputName="Khai" #onInp [(ngModel)]="hocVien.hoTen">
+  <button (click)="ChangeName(onInp)">Click</button>
+</div>

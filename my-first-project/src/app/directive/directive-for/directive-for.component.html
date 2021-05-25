@@ -1,0 +1,39 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Ma SV</th>
+        <th>Ho ten</th>
+        <th>Tuoi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sv of DanhSachSinhVien; let STT = index">
+        <td>{{STT+1}}</td>
+        <td>{{sv.MaSV}}</td>
+        <td>{{sv.HoTen}}</td>
+        <td>{{sv.Tuoi}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h3>Them sinh vien</h3>
+  <div class="form-group">
+    <span>Ma sinh vien</span>
+    <input #MaSV type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <span>Ho ten</span>
+    <input #HoTen type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <span>Ma sinh vien</span>
+    <input #Tuoi type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success" (click)="ThemSinhVien(MaSV.value, HoTen.value, Tuoi.value)">Them sinh vien</button>
+  </div>
+</div>
