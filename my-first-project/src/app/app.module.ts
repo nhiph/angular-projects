@@ -6,6 +6,7 @@ import { OnewayModule } from './oneway/oneway.module';
 import { BaiTapBindingComponent } from './bai-tap-binding/bai-tap-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveModule } from './directive/directive.module';
+import { MyDirectiveModule } from './my-directive/my-directive.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DirectiveModule } from './directive/directive.module';
     BrowserModule,
     OnewayModule,
     FormsModule,
-    DirectiveModule
+    DirectiveModule,
+    MyDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]

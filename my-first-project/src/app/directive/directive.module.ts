@@ -4,6 +4,8 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirectiveIfElseComponent } from './directive-if-else/directive-if-else.component';
 import { DirectiveSwitchComponent } from './directive-switch/directive-switch.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
+import { DirectiveClassComponent } from './directive-class/directive-class.component';
+import { MyDirectiveModule } from '../my-directive/my-directive.module';
 
 
 
@@ -12,16 +14,19 @@ import { DirectiveForComponent } from './directive-for/directive-for.component';
     DirectiveIfComponent,
     DirectiveIfElseComponent,
     DirectiveSwitchComponent,
-    DirectiveForComponent
+    DirectiveForComponent,
+    DirectiveClassComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MyDirectiveModule
   ],
   exports: [
     DirectiveIfComponent,
     DirectiveIfElseComponent,
     DirectiveSwitchComponent,
-    DirectiveForComponent
+    DirectiveForComponent,
+    DirectiveClassComponent
   ]
 })
 export class DirectiveModule { }
